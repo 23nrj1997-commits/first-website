@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <section>
     <nav>
-      <img src="./assets/FES.svg" alt="FES Logo">
+      <img src="./assets/FES.svg" class="logo" alt="FES Logo">
       <ul>
          <li><a href="#about">About</a></li>
         <li><a href="#discord">Discord</a></li>
@@ -16,56 +18,72 @@
       </ul>
     </nav>
     <header>
-      <div>
+      <div class="row">
+        <div>
         <h1> Best Place to Learn Frontend</h1>
-        <p>Go from being an absolute beginner to pro with a simplified program</p>
+        <p CLASS="subheader">Go from being an absolute beginner to pro with a simplified program</p>
         <button>Start Now</button>
+        </div>
+        <figure>
+          <img src="./assets/laptop.png" alt="Laptop Image">
+        </figure>
       </div>
-      <figure>
-        <img src="./assets/laptop.png" alt="Laptop Image">
-      </figure>
     </header>
   </section>
   
   <main>
     <section id="about">
       <h2>About</h2>
-      <div>
-      <p>We are a community of frontend developers dedicated to helping beginners learn and grow in their skills. Our program is designed to take you from zero to hero in frontend development.</p>
+      <div class="row">
+        <div class="section__description">
+          <div class="section__description--wrapper">
+            <p class="section__description--para">We are a community of frontend developers dedicated to helping beginners learn and grow in their skills. Our program is designed to take you from zero to hero in frontend development.</p>
+            <p class="section__description--para">We are a community of frontend developers dedicated to helping beginners learn and grow in their skills. Our program is designed to take you from zero to hero in frontend development.</p>
+          </div>
+          <figure class="about__img--wrapper">
+          <img src="./assets/about.jpg" alt="About Image">
+          </figure>
+        </div>
       </div>
-      <figure>
-        <img src="./assets/about.jpg" alt="About Image">
-      </figure>
     </section>
 
     <section id="discord">
-      <h2>Join Our Discord</h2>
-      <div>
-      <p>Connect with other learners and experienced developers in our Discord community. Share your progress, ask questions, and get support.</p>
+      <h2>Discord</h2>
+      <div class="row">
+        <div class="section__description">
+          <div class="section__description--wrapper">
+            <p class="section__description--para">Connect with other learners and experienced developers in our Discord community. Share your progress, ask questions, and get support.</p>
+            <p class="section__description--para">Connect with other learners and experienced developers in our Discord community. Share your progress, ask questions, and get support.</p>
+          </div>
+          <figure class="about__img--wrapper">
+          <img src="./assets/discord.jpg" alt="Discord Image">
+          </figure>
+          </div>
+        </div>
       </div>
-    <figure>
-        <img src="./assets/discord.jpg" alt="Discord Image">
-    </figure>
     </section>
 
     <section id="contact">
-      <h2>Contact Us</h2>
-      <form action="">
-        <span>Email</span>
-        <input type="text" placeholder="nick@example.com">
-        <span>Message</span>
-        <textarea placeholder="Your message here..."></textarea>
-      </form>
+      <h2>Contact</h2>
+      <div class="row">
+        <form action="">
+          <span>Email</span>
+          <input type="email" placeholder="nick@example.com">
+          <span>Message</span>
+          <textarea placeholder="cool website, let's get connected!"></textarea>
+          <button>Contact Us!</button>
+        </form>
+      </div>
     </section>
   </main>
   
   <footer>
-    <img src="./assets/FES.svg" alt="FES Logo">
-    <div>
-      <a href="#about">About</a>
-      <a href="#discord">Discord</a>
-      <a href="#contact">Contact</a>
-      <a href="">Courses</a>
+    <img class="footer__logo" src="./assets/FES.svg" alt="FES Logo">
+    <div class="footer__links">
+      <a class="footer__link" href="#about">About</a>
+      <a class="footer__link" href="#discord">Discord</a>
+      <a class="footer__link" href="#contact">Contact</a>
+      <a class="footer__link" href="">Courses</a>
     </div>
     <p>copyright FrontEnd Simplified</p>
   </footer>
